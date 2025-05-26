@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Video Collection</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .video-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .video-link {
+      background-color: #111;
+      padding: 1rem;
+      border: 1px solid #444;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      transition: background 0.3s;
+    }
+
+    .video-link:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎥 My Video Collection</h1>
+
+  <div class="video-list">
+    <a href="video1.html" class="video-link">▶️ Watch Video 1</a>
+    <a href="video2.html" class="video-link">▶️ Watch Video 2</a>
+    <!-- Add more links below as needed -->
+  </div>
+</body>
+</html>
