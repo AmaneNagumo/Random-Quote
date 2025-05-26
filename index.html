@@ -2,11 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Video Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library of Quotes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #ffffff;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    a.button {
+      text-decoration: none;
+      background-color: #1f1f1f;
+      color: #00ffe1;
+      padding: 15px 30px;
+      border: 2px solid #00ffe1;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffe1;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #00ffe1;
+      color: #121212;
+      box-shadow: 0 0 20px #00ffe1, 0 0 30px #00ffe1;
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 600px) {
+      .button-container {
+        flex-direction: row;
+      }
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif; margin-top:50px;">
-  <h1>Welcome to the Video Library</h1>
-  <p><a href="video1.html">Watch Video 1</a></p>
-  <p><a href="video2.html">Watch Video 2</a></p>
+<body>
+  <h1>Select a Video</h1>
+  <div class="button-container">
+    <a class="button" href="video1.html">Watch Video 1</a>
+    <a class="button" href="video2.html">Watch Video 2</a>
+  </div>
 </body>
 </html>
