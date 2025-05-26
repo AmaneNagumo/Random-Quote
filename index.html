@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Watch Video</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Player</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+      margin: 0;
+    }
+    video {
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+  </style>
 </head>
-<body style="text-align: center; background-color: #f9f9f9; font-family: sans-serif;">
-  <h2>Instructional Video</h2>
-  <video width="90%" controls>
-    <source src="5a5ca77f-3698-4b1e-802e-7e38e3ed4503.mp4" type="video/mp4">
+<body>
+  <video controls>
+    <source src="videos/5a5ca77f-3698-4b1e-802e-7e38e3ed4503.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 </body>
